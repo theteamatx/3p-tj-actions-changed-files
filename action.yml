@@ -254,7 +254,7 @@ runs:
         INPUT_HAS_CUSTOM_PATTERNS: ${{ steps.glob.outputs.has-custom-patterns }}
         INPUT_JSON_RAW_FORMAT: ${{ inputs.json_raw_format }}
     - name: Generate output files
-      uses: theteamatx/3p-tj-actions-json2file@ee0fd2ce53e57fa50da61615cd644018eaf3ab6c # v1
+      uses: theteamatx/3p-tj-actions-json2file@46c05077b3ecb4e27ebda94d4216ba9dbdb22a7c # v1
       if: inputs.write_output_files == 'true'
       with:
         outputs: ${{ toJSON(steps.changed-files.outputs) }}
